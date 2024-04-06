@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import nav from './config/nav'
 import sidebar from './config/sidebar'
+import themeConfigLocalText from './config/themeConfigLocalText'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,55 +9,16 @@ export default defineConfig({
   title: "大前端文档",
   description: "清晰详尽且易于理解的大前端文档库",
   base: '/docs/',
+  head: [['link', { rel: 'icon', href: '/docs/favicon.ico' }]],
   markdown: {
     image: {
       lazyLoading: true
     }
   },
   themeConfig: {
+    ...themeConfigLocalText,
     i18nRouting: false,
     logo: '/images/cyq-logo.png',
-    search: {
-      provider: 'local',
-      options: {
-        translations: {
-          button: {
-            buttonText: "搜索文档",
-            buttonAriaLabel: "搜索文档",
-          },
-          modal: {
-            noResultsText: "无法找到相关结果",
-            resetButtonTitle: "清除查询结果",
-            footer: {
-              selectText: "选择",
-              navigateText: "切换",
-              closeText: "关闭",
-            },
-          },
-        },
-      }
-    },
-    outline: {
-      level: "deep", // 右侧大纲标题层级
-      label: "本页导航", // 右侧大纲标题文本配置
-    },
-    lastUpdatedText: '上次更新',
-    sidebarMenuLabel: '导航目录',
-    returnToTopLabel: '返回顶部',
-    // 主题切换文字
-    darkModeSwitchLabel: '明亮/暗黑模式',
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
-    },
-    lastUpdated: {
-      text: '更新于',
-      format: 'YYYY-MM-DD HH:mm:ss',
-      formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
-      }
-    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/chengyanqi123' },
       {
@@ -69,8 +31,9 @@ export default defineConfig({
     nav,
     sidebar,
     footer: {
-      message: '创作不易 未经允许 禁止转载',
-      copyright: 'Copyright © 2019-present Chengyanqi'
+      // message: '创作不易 · 未经允许 · 禁止转载',
+      message: '开源共享 · 合作共创 · 引用分享请注明出处',
+      copyright: 'Copyright © 2024-present Chengyanqi'
     },
   }
 })
