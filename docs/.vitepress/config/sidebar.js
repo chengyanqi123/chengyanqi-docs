@@ -59,7 +59,17 @@ export default {
         items: [
             {
                 text: 'Vue',
-                link: '/框架/Vue'
+                link: '/框架/Vue',
+                items: [
+                    {
+                        text: '基础入门',
+                        link: '/框架/Vue/基础入门'
+                    },
+                    {
+                        text: '进阶',
+                        link: '/框架/Vue/进阶'
+                    },
+                ]
             },
             {
                 text: 'Electron',
