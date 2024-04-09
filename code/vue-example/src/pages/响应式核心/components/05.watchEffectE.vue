@@ -42,9 +42,9 @@
     </div>
 </template>
 
-<script setup>
+<script setup name="watchEffectE">
 import { reactive, watch, watchEffect } from 'vue';
-console.log('↓↓↓↓↓↓↓↓↓↓↓ 05. watchEffect ↓↓↓↓↓↓↓↓↓↓↓');
+console.log('↓↓↓↓↓↓↓↓↓↓↓ 05. watchEffectE ↓↓↓↓↓↓↓↓↓↓↓');
 
 // BMI指数	结果
 // BMI ＜ 18.5	体中过轻

@@ -6,7 +6,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup name="definExposeE">
 import definExposeE2 from './06.definExposeE2.vue'
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 06. definExposeE ↓↓↓↓↓↓↓↓↓↓↓');
 import { ref, onMounted } from 'vue'

@@ -5,7 +5,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup name="computedE">
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 03. computed ↓↓↓↓↓↓↓↓↓↓↓');
 // 接受一个 getter 函数，返回一个只读的响应式 ref 对象。
 // 该 ref 通过 .value 暴露 getter 函数的返回值。

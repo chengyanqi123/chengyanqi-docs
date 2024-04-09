@@ -8,7 +8,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup name="reactiveAndRef">
 import { ref, reactive } from 'vue';
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 01. reactiveAndRef ↓↓↓↓↓↓↓↓↓↓↓');
 

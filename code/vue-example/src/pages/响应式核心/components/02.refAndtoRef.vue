@@ -10,7 +10,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup name="refAndtoRef">
 import { reactive, ref, toRef, toRefs } from 'vue';
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 02. refAndtoRef ↓↓↓↓↓↓↓↓↓↓↓');
 

@@ -1,50 +1,70 @@
 <template>
   <div class="app">
-    <div class="item">
-      <reactiveAndRef />
+    <div class="nav">
+      <!-- <router-link to="/">&lt;回到首页</router-link> -->
+      <button @click="goHome" v-show="showBack">&lt;回到首页</button>
     </div>
-    <div class="item">
-      <refAndtoRef />
-    </div>
-    <div class="item">
-      <computedE />
-    </div>
-    <div class="item">
-      <watchE />
-    </div>
-    <div class="item">
-      <watchEffectE />
-    </div>
-    <div class="item">
-      <definExposeE />
-    </div>
-    <div class="item">
-      <baseLife />
+    <div>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script setup>
-import reactiveAndRef from './components/01.reactiveAndRef.vue'
-import refAndtoRef from './components/02.refAndtoRef.vue'
-import computedE from './components/03.computedE.vue'
-import watchE from './components/04.watchE.vue'
-import watchEffectE from './components/05.watchEffectE.vue'
-import definExposeE from './components/06.definExposeE.vue'
-import baseLife from './components/07.基本生命周期.vue'
+import { ref, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+const [route, router] = [useRoute(), useRouter()];
+const showBack = ref(true)
+
+console.log("route: ", route);
+console.log("router: ", router);
+watch(() => route.path, newPath => {
+  console.log("newPath: ", newPath);
+  showBack.value = newPath !== '/'
+}, {
+  immediate: true
+})
+
+function goHome() {
+  router.back()
+}
+
 </script>
 
 <style lang="scss">
-.app {
-  width: 100%;
+$nav-height: 40px;
 
-  .item {
-    width: 100%;
-    border-top: 1px dashed #000;
-    margin: 10px 0;
-    background-color: #b38ba2;
-    padding: 20px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  &::before {
+    display: block;
+    content: "";
+    width: 100vw;
+    height: $nav-height;
+  }
+
+  >.nav {
+    width: 100vw;
+    height: $nav-height;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  >a {
+    display: block;
+    padding: 40px 20px;
+    color: #00f;
+    text-decoration: underline;
+  }
+
+  >.router-active {
+    color: #f00;
+    text-decoration: underline;
   }
 }
 </style>

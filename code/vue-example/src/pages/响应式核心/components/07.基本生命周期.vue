@@ -3,11 +3,11 @@
         <h1>07. 基本生命周期</h1>
         <p>日期: {{ localDate }}</p>
         <button @click="incrementDate">日期+1</button>
-        <button @click="remove">销毁自身</button>
+        <button>销毁自身</button>
     </div>
 </template>
 
-<script setup>
+<script setup name="lifeCycle">
 import { ref, computed } from 'vue'
 import { onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted } from 'vue'
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 07. 基本生命周期 ↓↓↓↓↓↓↓↓↓↓↓')
@@ -18,9 +18,6 @@ const localDate = computed(() => {
 })
 function incrementDate() {
     date.value = new Date(date.value.getTime() + 1000 * 60 * 60 * 24)
-}
-function remove() {
-    show.value = false
 }
 
 onBeforeMount(() => {

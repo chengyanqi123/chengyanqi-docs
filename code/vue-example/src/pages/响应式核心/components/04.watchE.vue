@@ -16,7 +16,7 @@
     </div>
 </template>
 
-<script setup name="MyComponentWatch">
+<script setup name="watchE">
 console.log('↓↓↓↓↓↓↓↓↓↓↓ 04. watch ↓↓↓↓↓↓↓↓↓↓↓');
 import { watch, reactive, ref, toRefs, defineExpose } from 'vue';
 // ## watch() 可以侦听一个或多个响应式数据源，并在数据源变化时调用所给的回调函数。
