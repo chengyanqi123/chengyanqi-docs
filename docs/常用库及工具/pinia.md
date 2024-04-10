@@ -142,6 +142,7 @@ export const useUserStore = defineStore('user', {
 </template>
 
 <script setup>
+import { storeToRefs } from 'pinia'
 import { useUserStore } from '@/store/User.js'
 // userStore是`reactive`的响应式数据
 const userStore = useUserStore()
@@ -149,6 +150,11 @@ const userStore = useUserStore()
 // 访问state
 console.log(userStore.nick)	// tom
 console.log(userStore.$state.nick)	// tom
+
+// 单个访问比较繁琐，可以使用`pinia`提供的`storeToRefs`进行解构。
+// 不同于`toRefs`的是，`storeToRefs`只会将`state`数据进行转换。
+const { nick, hobby, token } = storeToRefs(userStore)
+console.log(nick, hobby, token)	// 'tom' [ "ball", "book" ] 'xxx'
 </script>
 ```
 
