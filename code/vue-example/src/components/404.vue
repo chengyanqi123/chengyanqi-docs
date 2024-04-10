@@ -10,6 +10,7 @@
                 <router-link to="/life-cycle" active-class="router-active">生命周期</router-link>
                 <router-link to="/component-com" active-class="router-active">组件通讯</router-link>
                 <router-link to="/router" active-class="router-active">路由</router-link>
+                <router-link to="/pinia" active-class="router-active">pina</router-link>
             </div>
         </div>
     </div>

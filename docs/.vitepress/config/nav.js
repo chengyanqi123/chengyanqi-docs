@@ -1,19 +1,27 @@
 export default [
     {
-        text: '基础知识',
+        text: '语言基础',
         items: [
             {
                 text: 'HTML',
-                link: '/基础知识/HTML'
+                link: '/语言基础/HTML'
             },
             {
                 text: 'CSS',
-                link: '/基础知识/CSS'
+                link: '/语言基础/CSS'
             },
             {
                 text: 'JavaScript',
-                link: '/基础知识/JavaScript'
+                link: '/语言基础/JavaScript'
             },
+            {
+                text: 'Nodejs',
+                link: '/语言基础/Nodejs'
+            },
+            {
+                text: 'TypeScript',
+                link: '/语言基础/TypeScript'
+            }
         ]
     },
     {
@@ -30,7 +38,7 @@ export default [
                     {
                         text: '进阶',
                         link: '/框架/Vue/进阶'
-                    },
+                    }
                 ]
             },
             {
@@ -103,16 +111,43 @@ export default [
         ]
     },
     {
-        text: 'TypeScript',
-        link: '/TypeScript'
-    },
-    {
-        text: 'Nodejs',
-        link: '/Nodejs'
-    },
-    {
         text: '常用库及工具',
-        link: '/常用库及工具'
+        // link: '/常用库及工具',
+        items: [
+            {
+                text: '通用',
+                items: []
+            },
+            {
+                text: '前端',
+                items: [
+                    {
+                        text: 'vue-router',
+                        link: '/常用库及工具/vue-router'
+                    },
+                    {
+                        text: 'pinia',
+                        link: '/常用库及工具/pinia'
+                    },
+                    {
+                        text: 'element-plus',
+                        link: 'https://element-plus.org/zh-CN/guide/installation.html'
+                    },
+                ]
+            },
+            {
+                text: 'Nodejs',
+                items: []
+            },
+            {
+                text: 'cli',
+                items: []
+            },
+        ]
+    },
+    {
+        text: '常见问题',
+        link: '/常见问题'
     },
     {
         text: '我的开源', items: [
@@ -122,8 +157,4 @@ export default [
             }
         ]
     },
-    {
-        text: '常见问题',
-        link: '/常见问题'
-    }
 ]

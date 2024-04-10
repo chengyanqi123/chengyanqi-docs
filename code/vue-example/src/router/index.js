@@ -20,7 +20,10 @@ const router = createRouter({
         {
             path: '/router',
             component: () => import('@/pages/路由/index.vue'),
-            meta: { transition: 'slide-left' },
+        },
+        {
+            path: '/pinia',
+            component: () => import('@/pages/pinia/index.vue'),
         },
         { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
     ],
