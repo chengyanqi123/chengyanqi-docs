@@ -1,30 +1,30 @@
 export default {
-    "/语言基础/": {
+    '/语言基础/': {
         text: '语言基础',
         items: [
             {
                 text: 'HTML',
-                link: '/语言基础/HTML'
+                link: '/语言基础/HTML',
             },
             {
                 text: 'CSS',
-                link: '/语言基础/CSS'
+                link: '/语言基础/CSS',
             },
             {
                 text: 'JavaScript',
-                link: '/语言基础/JavaScript'
+                link: '/语言基础/JavaScript',
             },
             {
                 text: 'Nodejs',
-                link: '/语言基础/Nodejs'
+                link: '/语言基础/Nodejs',
             },
             {
                 text: 'TypeScript',
-                link: '/语言基础/TypeScript'
-            }
-        ]
+                link: '/语言基础/TypeScript',
+            },
+        ],
     },
-    "/工程化/": {
+    '/工程化/': {
         text: '工程化',
         items: [
             {
@@ -32,93 +32,122 @@ export default {
                 items: [
                     { text: 'webpack', link: '/工程化/打包工具/webpack.md' },
                     { text: 'rollup', link: '/工程化/打包工具/rollup.md' },
-                    { text: 'vite', link: '/工程化/打包工具/vite.md' }
-                ]
+                    { text: 'vite', link: '/工程化/打包工具/vite.md' },
+                ],
             },
             {
                 text: '包管理器',
                 items: [
                     { text: 'npm', link: '/工程化/包管理器/npm.md' },
                     { text: 'pnpm', link: '/工程化/包管理器/pnpm.md' },
-                    { text: 'yarn', link: '/工程化/包管理器/yarn.md' }
-                ]
-            }
-        ]
+                    { text: 'yarn', link: '/工程化/包管理器/yarn.md' },
+                ],
+            },
+        ],
     },
-    "/进阶后端": {
+    '/进阶后端': {
         text: '进阶后端',
         items: [
             {
                 text: 'Nginx',
-                link: '/进阶后端/Nginx'
+                link: '/进阶后端/Nginx',
             },
             {
                 text: 'Mysql',
-                link: '/进阶后端/Mysql'
+                link: '/进阶后端/Mysql',
             },
             {
                 text: 'Redis',
-                link: '/进阶后端/Redis'
-            }
-        ]
+                link: '/进阶后端/Redis',
+            },
+        ],
     },
-    "/框架/": {
+    '/框架/': {
         text: '框架',
         items: [
             {
                 text: 'Vue',
-                link: '/框架/Vue',
+                // link: '/框架/Vue',
                 items: [
                     {
                         text: '基础入门',
-                        link: '/框架/Vue/基础入门'
+                        // link: '/框架/Vue/基础入门',
+                        items: [
+                            {
+                                text: '响应式',
+                                link: '/框架/Vue/基础入门/响应式',
+                            },
+                            {
+                                text: '生命周期',
+                                link: '/框架/Vue/基础入门/生命周期',
+                            },
+                            {
+                                text: '内置属性',
+                                link: '/框架/Vue/基础入门/内置属性',
+                            },
+                            {
+                                text: '指令',
+                                link: '/框架/Vue/基础入门/指令',
+                            },
+                            {
+                                text: '组件',
+                                link: '/框架/Vue/基础入门/组件',
+                            },
+                        ],
                     },
                     {
-                        text: '进阶',
-                        link: '/框架/Vue/进阶'
+                        text: '深入原理',
+                        link: '/框架/Vue/深入原理',
                     },
                     {
-                        text: 'vue-router',
-                        link: '/常用库及工具/vue-router'
+                        text: 'Vue生态',
+                        items: [
+                            {
+                                text: 'vue-router',
+                                link: '/常用库及工具/vue-router',
+                                target: '_blank'
+                            },
+                            {
+                                text: 'pinia',
+                                link: '/常用库及工具/pinia',
+                                target: '_blank'
+                            },
+                        ],
                     },
-                    {
-                        text: 'pinia',
-                        link: '/常用库及工具/pinia'
-                    },
-                ]
+                ],
             },
             {
                 text: 'Electron',
-                link: '/框架/Electron'
-            }
-        ]
+                link: '/框架/Electron',
+            },
+        ],
     },
-    "/面试题/": {
+    '/面试题/': {
         text: '面试题',
         items: [
             {
                 text: 'CSS面试题',
-                link: '/面试题/CSS面试题'
+                link: '/面试题/CSS面试题',
             },
             {
                 text: 'HTML面试题',
-                link: '/面试题/HTML面试题'
+                link: '/面试题/HTML面试题',
             },
             {
                 text: 'Vue面试题',
-                link: '/面试题/Vue面试题'
+                link: '/面试题/Vue面试题',
             },
             {
                 text: 'JavaScript面试题',
-                link: '/面试题/JavaScript面试题'
+                link: '/面试题/JavaScript面试题',
             },
             {
                 text: 'webpack面试题',
-                link: '/面试题/webpack面试题'
-            }
-        ]
+                link: '/面试题/webpack面试题',
+            },
+        ],
     },
-    "/常用库及工具/": {
+    '/常用库及工具/': {
         text: '常用库及工具',
         // link: '/常用库及工具',
         items: [
@@ -127,35 +156,35 @@ export default {
                 items: [
                     {
                         text: 'dayjs',
-                        link: 'https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md'
+                        link: 'https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md',
                     },
-                ]
+                ],
             },
             {
                 text: '前端',
                 items: [
                     {
                         text: 'vue-router',
-                        link: '/常用库及工具/vue-router'
+                        link: '/常用库及工具/vue-router',
                     },
                     {
                         text: 'pinia',
-                        link: '/常用库及工具/pinia'
+                        link: '/常用库及工具/pinia',
                     },
                     {
                         text: 'element-plus',
-                        link: 'https://element-plus.org/zh-CN/guide/installation.html'
+                        link: 'https://element-plus.org/zh-CN/guide/installation.html',
                     },
-                ]
+                ],
             },
             {
                 text: 'Nodejs',
-                items: []
+                items: [],
             },
             {
                 text: 'cli',
-                items: []
+                items: [],
             },
-        ]
+        ],
     },
 }
