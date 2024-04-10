@@ -116,7 +116,12 @@ export default [
         items: [
             {
                 text: '通用',
-                items: []
+                items: [
+                    {
+                        text: 'dayjs',
+                        link: 'https://github.com/iamkun/dayjs/blob/dev/docs/zh-cn/README.zh-CN.md'
+                    },
+                ]
             },
             {
                 text: '前端',
