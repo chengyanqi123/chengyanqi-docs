@@ -31,7 +31,6 @@ import computedE from './components/03.computedE.vue'
 import watchE from './components/04.watchE.vue'
 import watchEffectE from './components/05.watchEffectE.vue'
 import definExposeE from './components/06.definExposeE.vue'
-import lifeCycle from './components/07.基本生命周期.vue'
 </script>
 
 <style scoped lang='scss'>

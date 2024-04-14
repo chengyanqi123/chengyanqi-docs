@@ -5,13 +5,6 @@
             <h2 class="title2">Not Found
             </h2>
             <p class="desc"> The resource requested could not be found on this server!</p>
-            <div class="buttons">
-                <router-link to="/reactive-core" active-class="router-active">响应式:核心</router-link>
-                <router-link to="/life-cycle" active-class="router-active">生命周期</router-link>
-                <router-link to="/component-com" active-class="router-active">组件通讯</router-link>
-                <router-link to="/router" active-class="router-active">路由</router-link>
-                <router-link to="/pinia" active-class="router-active">pina</router-link>
-            </div>
         </div>
     </div>
 </template>
@@ -42,12 +35,6 @@
         .title2 {
             margin-top: 20px;
             font-size: 30px;
-        }
-
-        .buttons {
-            >a {
-                margin: 0 12px;
-            }
         }
     }
 }

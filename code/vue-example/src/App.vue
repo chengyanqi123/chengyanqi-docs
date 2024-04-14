@@ -1,8 +1,10 @@
 <template>
   <div class="app">
     <div class="nav">
-      <!-- <router-link to="/">&lt;回到首页</router-link> -->
-      <button @click="goHome" v-show="showBack">&lt;回到首页</button>
+      <button>
+        <router-link to="/">&lt;回到首页</router-link>
+      </button>
+      <button @click="goHome" v-show="showBack">&lt;返回</button>
     </div>
     <div>
       <router-view></router-view>
@@ -16,14 +18,14 @@ import { useRoute, useRouter } from 'vue-router';
 const [route, router] = [useRoute(), useRouter()];
 const showBack = ref(true)
 
-console.log("route: ", route);
-console.log("router: ", router);
-watch(() => route.path, newPath => {
-  console.log("newPath: ", newPath);
-  showBack.value = newPath !== '/'
-}, {
-  immediate: true
-})
+// console.log("route: ", route);
+// console.log("router: ", router);
+// watch(() => route.path, newPath => {
+//   console.log("newPath: ", newPath);
+//   showBack.value = newPath !== '/'
+// }, {
+//   immediate: true
+// })
 
 function goHome() {
   router.back()
